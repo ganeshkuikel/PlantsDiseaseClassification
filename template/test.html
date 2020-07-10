@@ -1,0 +1,63 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plants Disease Classification</title>
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/particles.css' %}"> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- <script src="{% static 'js/animations.js'%}"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+<style type="text/css">
+	.btn1{
+    border: sold 2px;
+  display: block;
+  /*text-align: center;*/
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  /*position: absolute;*/
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 ;
+  margin-left: 37%;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 4px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  width: 20%;
+  }
+</style>
+
+</head>
+<body >
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- Steps loading -->
+  <!--  <script type="text/javascript">
+    particlesJS.load('particles-js',"{% static 'json/particles.json' %}",function(){
+      console.log('particles json file loaded.')
+    });
+   </script> -->
+	   <h1 class="ml3" style="text-align: center; color: #fff">Plants Disease Classification</h1>
+	   <h2 style="margin-left: 30%">Filename:{{filePathName}}</h2>
+	  <img style="margin-top:2%; border-style: solid 2px black; margin-left: 40%; z-index: -1;" src="{{filePathName}}" width="20%",height=20%; alt="sj">
+	 <a class="btn1" href="{% url 'home' %}"><span style="color: #fff; border-radius: 20px; ">Try another image</span></a>
+	 <!-- <h2>{{ message }}</h2> -->
+	  <h2 style="margin-left: 30%">Prediction: {{ prediction }}</h2>
+	  <h2 style="margin-left: 30%">Accuracy: {{ Accuracy }}%</h2>
+     <div id="particles-js" style="z-index: -1; width: 100%; height: 100%;margin: 0;
+    padding: 0;
+    /* position it to start at the top of the page */
+    top: 0; position: fixed;background-image: linear-gradient(to top, #2c5f2d 0%, #97d9e1 100%);">
+        
+
+
+     </div>
+          <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

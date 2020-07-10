@@ -1,0 +1,101 @@
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+  font-family: sans-serif;
+  /*color: #fff;*/
+  font-weight: bold;
+}
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description, .link {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn {
+  
+
+}
+
+.btn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #2c5f2d;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px; 
+}
+
+/*Text*/
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+#custom-button {
+  padding: 10px;
+  /*color: white;*/
+  /*background-color: #009578;*/
+  /*border: 1px solid #000;*/
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-text {
+  /*margin-left: 10px;*/
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+#Progress_Status { 
+  width: 50%; 
+  background-color: #ddd; 
+  margin-left: 22%;
+  display: none;
+} 
+  
+#myprogressBar { 
+  width: 1%; 
+  height: 35px; 
+  background-color: #2c5f2d; 
+  text-align: center; 
+  line-height: 32px; 
+  color: black; 
+} 
